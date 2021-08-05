@@ -108,6 +108,12 @@
 			<groupId>io.virtualan</groupId>
 			<artifactId>virtualization</artifactId>
 			<version>${virtualan.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.googlecode.maven-download-plugin</groupId>
+					<artifactId>download-maven-plugin</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<!-- HyperSQL DB -->
