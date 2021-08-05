@@ -1,2 +1,2 @@
 # virtualan-virtualization
-Build Docker for Service virtualization Image
+Build Docker Image for Service virtualization
