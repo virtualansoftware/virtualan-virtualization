@@ -114,8 +114,16 @@
 					<artifactId>download-maven-plugin</artifactId>
 				</exclusion>
 				<exclusion>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+				</exclusion>
+				<exclusion>
 					<groupId>log4j</groupId>
 					<artifactId>log4j</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>junit</groupId>
+					<artifactId>junit</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
