@@ -5,9 +5,13 @@ import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.kafka.test.context.EmbeddedKafka;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"io.virtualan", "io.virtualan.configuration"})
+@EmbeddedKafka(partitions = 1, controlledShutdown = false, brokerProperties = {
+        "listeners=PLAINTEXT://localhost:9092", "port=9092",
+        "log.dir=target/kafka-logs"})
 public class Virtualization implements CommandLineRunner {
 
     @Override

@@ -131,5 +131,33 @@
 		</dependency>
 		<!-- END Virtual Service API support -->
 
+		<!-- Start embedded kafka -->
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka-test</artifactId>
+			<version>2.7.4</version>
+		</dependency>
+
+		<!-- End -->
+		<!--  ActiveMQ -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-activemq</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-broker</artifactId>
+			<version>5.16.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-kahadb-store</artifactId>
+			<version>5.16.2</version>
+		</dependency>
+		<!-- End -->
+
 	</dependencies>
 </project>
