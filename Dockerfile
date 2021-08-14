@@ -23,4 +23,4 @@ COPY --from=build /home/app/lib  /openapi/virtualan/lib
 COPY --from=build /home/app/target/virtualan-virtualization.jar /openapi/virtualan/virtualan-virtualization.jar
 COPY --from=gcsfuse /go/bin/gcsfuse /usr/local/bin
 
-ENTRYPOINT ["java", "-cp", "/openapi/virtualan/virtualan-virtualization.jar", "-Dloader.main=io.virtualan.Virtualization",  "org.springframework.boot.loader.PropertiesLauncher"]
+ENTRYPOINT ["java", "-cp", "./conf:/conf:/openapi/virtualan/virtualan-virtualization.jar", "-Dloader.main=io.virtualan.Virtualization",  "org.springframework.boot.loader.PropertiesLauncher"]

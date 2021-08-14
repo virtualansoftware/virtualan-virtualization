@@ -1,5 +1,6 @@
 package io.virtualan;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.test.EmbeddedKafkaBroker;
@@ -9,6 +10,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 
 @Configuration
+@ConditionalOnProperty(havingValue="true", name="enable.kafka")
 public class KafkaConfig {
 
     private int kafkaPort;

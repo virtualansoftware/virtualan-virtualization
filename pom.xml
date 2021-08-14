@@ -3,12 +3,12 @@
 	<groupId>io.virtualan</groupId>
 	<artifactId>virtualan-virtualization</artifactId>
 	<packaging>jar</packaging>
-	<name>virtualan-virtualization</name>
+	<name>virtualan-virtualization-service</name>
 	<version>1.0.0</version>
-	<description>Service virtualization docker image builder</description>
+	<description>Service virtualization </description>
 	<properties>
 		<kafka-clients.version>2.8.0</kafka-clients.version>
-		<virtualan.version>1.1.3</virtualan.version>
+		<virtualan.version>1.1.4</virtualan.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
