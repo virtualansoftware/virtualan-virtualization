@@ -18,7 +18,7 @@ RUN apk add --no-cache ca-certificates fuse
 #
 # Package stage
 #
-FROM adoptopenjdk/openjdk11:alpine
+FROM adoptopenjdk/openjdk8:alpine
 COPY --from=build /home/app/lib  /openapi/virtualan/lib
 COPY --from=build /home/app/target/virtualan-virtualization.jar /openapi/virtualan/virtualan-virtualization.jar
 COPY --from=gcsfuse /go/bin/gcsfuse /usr/local/bin
