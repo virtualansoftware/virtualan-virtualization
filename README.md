@@ -16,15 +16,15 @@ Setup Service virtualization using Docker Image. It supports #OpenAPI, #AsyncAPI
 ## Home Page:
 	http://microservices.virtualandemo.com:8800/virtualan-ui
 ## OpenAPI
-## Add OpenAPI: 
+### Add: 
 	http://microservices.virtualandemo.com:8800/swagger-ui.html#/virtual-service-controller/createVirtualanApisUsingPOST 
 
-## Remove OpenAPI: 
+### Remove: 
 	http://microservices.virtualandemo.com:8800/swagger-ui.html#/virtual-service-controller/deleteVirtualanApisUsingDELETE
 
-## OpenAPI
-### AddSetup Kakfa: 
+## AsyncAPI
+### Setup Kafka: 
 	https://tutorials.virtualan.io/#/SV_kafka
 
-### To SetupAMQ: 
+### Setup AMQ: 
 	https://tutorials.virtualan.io/#/SV_amq
