@@ -14,16 +14,16 @@ To build new release version of Docker Image for Service virtualization. It supp
 		    - ./conf:/conf:rw
 ## Home Page:
 	http://microservices.virtualandemo.com:8800/virtualan-ui
-
-## Upload Open API: 
+## OpenAPI
+## Add OpenAPI: 
 	http://microservices.virtualandemo.com:8800/swagger-ui.html#/virtual-service-controller/createVirtualanApisUsingPOST 
 
-## Remove Open API: 
+## Remove OpenAPI: 
 	http://microservices.virtualandemo.com:8800/swagger-ui.html#/virtual-service-controller/deleteVirtualanApisUsingDELETE
 
-## AsyncAPI
-### To Setup Kakfa: 
+## OpenAPI
+### AddSetup Kakfa: 
 	https://tutorials.virtualan.io/#/SV_kafka
 
-### To Setup AMQ: 
+### To SetupAMQ: 
 	https://tutorials.virtualan.io/#/SV_amq
