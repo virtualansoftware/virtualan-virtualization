@@ -1,10 +1,7 @@
-# service-virtualization
-To build new version of release Docker Image for Service virtualization. To Support #OpenAPI,  #AsyncAPI(Kafka and AMQ).
+# Service Virtualization
+To build new release version of Docker Image for Service virtualization. It supports #OpenAPI, #AsyncAPI(Kafka and AMQ).
 
-##  Install service virtualization
-
-### Docker compose:
-
+##  Install service virtualization - Docker compose:
 	version: "3.7"
 	services:
 	  virtualization:
@@ -19,11 +16,14 @@ To build new version of release Docker Image for Service virtualization. To Supp
 	http://microservices.virtualandemo.com:8800/virtualan-ui
 
 ## Upload Open API: 
-	
 	http://microservices.virtualandemo.com:8800/swagger-ui.html#/virtual-service-controller/createVirtualanApisUsingPOST 
 
 ## Remove Open API: 
-
 	http://microservices.virtualandemo.com:8800/swagger-ui.html#/virtual-service-controller/deleteVirtualanApisUsingDELETE
 
+## AsyncAPI
+### To Setup Kakfa: 
+	https://tutorials.virtualan.io/#/SV_kafka
 
+### To Setup AMQ: 
+	https://tutorials.virtualan.io/#/SV_amq
