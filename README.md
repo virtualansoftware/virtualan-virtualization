@@ -1,5 +1,6 @@
 # Service Virtualization
-To build new release version of Docker Image for Service virtualization. It supports #OpenAPI, #AsyncAPI(Kafka and AMQ).
+Setup Service virtualization using Docker Image. It supports #OpenAPI, #AsyncAPI(Kafka and AMQ).
+
 
 ##  Install service virtualization - Docker compose:
 	version: "3.7"
