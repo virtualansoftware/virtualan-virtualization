@@ -2,10 +2,7 @@
 Simplified way to setup Service virtualization using Docker Image. It supports #OpenAPI, #AsyncAPI(Kafka and AMQ).
 
 ## Video Tutorial
-
 [![Service Virtualization](https://img.youtube.com/vi/otTjbPxT0W8/0.jpg)](https://youtu.be/otTjbPxT0W8)
-
-
 
 ## Installation
 ### 1. Prerequisite
@@ -34,7 +31,7 @@ Create docker-compose.yml with appropriate profile with following instruction in
 	version: "3.7"
 	services:
 	  virtualization:
-		image: docker.io/virtualan/service-virtualization:1.0
+		image: docker.io/virtualan/service-virtualization:2.0
 		ports:
 		  - "8800:8800"
 		environment:
@@ -62,6 +59,9 @@ Create docker-compose.yml with appropriate profile with following instruction in
 ## AsyncAPI
 ### Setup Kafka
 	https://tutorials.virtualan.io/#/SV_kafka
+
+### Setup MQTT
+	http://localhost:3000/#/SV_mqtt
 
 ### Setup AMQ
 	https://tutorials.virtualan.io/#/SV_amq
