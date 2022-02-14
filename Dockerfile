@@ -1,7 +1,7 @@
 #
 # Build stage
 #
-FROM adoptopenjdk/maven-openjdk8 AS build
+FROM adoptopenjdk/maven-openjdk11 AS build
 LABEL maintainer="info@virtualan.io"
 COPY . /home/app/
 RUN mvn -f /home/app/pom.xml clean install
@@ -18,7 +18,7 @@ RUN apk add --no-cache ca-certificates fuse
 #
 # Package stage
 #
-FROM adoptopenjdk/openjdk8:alpine
+FROM adoptopenjdk/openjdk11:alpine
 COPY --from=build /home/app/lib  /openapi/virtualan/lib
 COPY --from=build /home/app/target/virtualan-virtualization.jar /openapi/virtualan/virtualan-virtualization.jar
 COPY --from=gcsfuse /go/bin/gcsfuse /usr/local/bin
