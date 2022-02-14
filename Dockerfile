@@ -9,7 +9,7 @@ RUN mvn -f /home/app/pom.xml clean install
 #
 # GCS Mount stage
 #
-FROM golang:1.15.2-alpine as gcsfuse
+FROM golang:1.17.6-alpine as gcsfuse
 RUN apk add --no-cache git
 ENV GOPATH /go
 RUN go get -u github.com/googlecloudplatform/gcsfuse
